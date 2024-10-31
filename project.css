@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", "sans-serif";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+header {
+  background-color: #f0f0f0;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+  transition: 0.7s ease;
+}
+header:hover {
+  transform: scale(1.1);
+}
+
+.logo {
+  text-decoration: none;
+  color: #3a6cf4;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.8em;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #3a6cf4;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding-left: 30px;
+  transition: 0.7s ease;
+}
+
+.navigation a:hover {
+  color: #601cfc;
+  font-size: 1.4em;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+.main {
+  align-items: center;
+  padding: 100px 100px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: white;
+  background-image: url(images/Code\ typing-rafiki.png); /* تعيين الصورة */
+  background-repeat: no-repeat; /* عدم تكرار الصورة */
+  background-position: right top; /* تثبيت الخلفية في الزاوية العلوية اليسرى */
+  background-size: auto 100%; /* عرض الصورة تلقائياً وارتفاع 100% */
+  background-position: right 8px top 70px;
+}
+
+.main h2 {
+  color: rgb(190, 110, 110);
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.main h2 span {
+  display: inline-block;
+  margin-top: 10px;
+  color: #3a6cff;
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.main h3 {
+  color: rgb(190, 110, 110);
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.main .main-btn {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  background: #3a6cff;
+  font-size: 1.5em;
+  font-weight: 800;
+  padding: 0.9375em 2.1875em;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  transition: 0.7s ease;
+  animation: breathing 3s ease-in-out infinite;
+}
+
+.main-btn:hover {
+  background-color: #601cfc;
+  font-size: 1.7em;
+}
+@keyframes breathing {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.social-icons a {
+  color: white;
+  padding-right: 30px;
+}
+
+.social-icons img {
+  margin-top: 20px;
+  width: 2.5rem;
+  transition: 0.7s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: #3a6cff;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+  padding-top: 40px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 20%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 50px;
+  transition: 0.7s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  color: #3a6cff;
+  font-size: 8em;
+  text-align: center;
+}
+
+.info h3 {
+  color: #3a6cff;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.info {
+  text-align: center;
+}
+
+.projects {
+  background-color: #000016;
+}
+
+.project .content {
+  margin-top: 30px;
+}
+
+.project-card {
+  background-color: white;
+  border: 1px solid white;
+  min-height: 14em;
+  width: 23em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  transition: 0.7s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.1);
+}
+
+.project-image img {
+  width: 100%;
+}
+
+.project-card:hover .project-image {
+  opacity: 0.9;
+}
+
+.project-info {
+  padding: 1em;
+}
+
+.project-category {
+  font-size: 0.8em;
+  color: rgb(105, 106, 163);
+}
+
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.more-details {
+  text-decoration: none;
+  color: #3a6cff;
+}
+
+.more-details:hover {
+  color: #601cfc;
+}
+
+.contact .icon {
+  font-size: 4.5em;
+}
+
+.contact .info h3 {
+  color: rgb(67, 68, 128);
+}
+
+.contact .info p {
+  font-size: 1.3em;
+}
+
+.footer {
+  background-color: #f0f0f0;
+  color: black;
+  padding: 0.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-title {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.footer p a {
+  color: #3a6cff;
+}
+
+.footer .social-icons a {
+  font-size: 1.3em;
+  padding: 0 12px 0 0;
+  align-items: center;
+}
+
+.footer .social-icons img {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  width: 2.5rem;
+}
+
+.footer p {
+  margin-top: 25px;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+header.dark-mode,
+footer.dark-mode {
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+}
+
+.navigation a.dark-mode {
+  color: #8ab4f8;
+}
+
+.card.dark-mode,
+.project-card.dark-mode {
+  background-color: #1f1f1f;
+}
+
+.social-icons img.dark-mode {
+  filter: invert(100%);
+}
+
+/* زر التبديل للوضع الداكن */
+.dark-mode-toggle {
+  background-color: #3a6cff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem; /* حجم الأيقونة */
+  width: 50px; /* عرض الزر */
+  height: 50px; /* ارتفاع الزر */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+.main.dark-mode {
+  background-color: #121212; /* خلفية داكنة في الوضع الداكن */
+}
+
+.dark-mode-toggle:hover {
+  background-color: #601cfc;
+}
+
+#theme-icon {
+  font-size: 1em; /* حجم الأيقونة داخل الزر */
+}
+@media (max-width: 768px) {
+  /* يمكنك تعديل القيمة حسب الحاجة */
+  .main {
+    background-image: none; /* إخفاء الصورة الخلفية */
+    padding: 50px 20px; /* تعديل المسافات إذا لزم الأمر */
+  }
+
+  .main h2,
+  .main h3 {
+    text-align: center; /* مركز النصوص */
+  }
+
+  .navigation {
+    flex-direction: column; /* جعل الروابط عمودية */
+    align-items: center; /* توسيط الروابط */
+  }
+
+  .footer {
+    flex-direction: column; /* جعل الفوتر عمودي */
+    align-items: center; /* توسيط العناصر داخل الفوتر */
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    justify-content: flex-start; /* محاذاة العناصر إلى اليسار */
+  }
+
+  .dark-mode-toggle {
+    margin-left: 10px; /* مسافة بين الكلمة والأيقونة */
+  }
+}
+@media (max-width: 768px) {
+  body,
+  html {
+    display: flex;
+    flex-direction: column; /* جعل العناصر عمودية */
+    align-items: center; /* توسيط العناصر أفقياً */
+    justify-content: center; /* توسيط العناصر عمودياً إذا كان ذلك مناسباً */
+    text-align: center; /* توسيط النصوص */
+  }
+
+  header,
+  .main,
+  .footer {
+    width: 100%; /* التأكد من أن العناصر تأخذ عرض الشاشة */
+    padding: 10px; /* يمكنك تعديل المسافات حسب الحاجة */
+  }
+
+  .title {
+    justify-content: center; /* توسيط العناصر داخل العنوان */
+  }
+
+  .navigation {
+    flex-direction: column; /* جعل الروابط عمودية */
+    align-items: center; /* توسيط الروابط */
+  }
+}
+#typewriter {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #3a6cff;
+  border-right: 2px solid #3a6cff;
+  width: fit-content;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+/* تأثير وميض الكيرسور */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
